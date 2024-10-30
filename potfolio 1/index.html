@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> portfolio webbsite </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!----------home--------->
+    <div id="header">
+        <div  class="container">
+            <div class="nav">
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contect">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+            <div class="header-text">
+                <p>web Developer</p>
+                <h1>Hi, I'm <span>Arvind</span><br>kumar from Etawah</h1>
+            </div>
+       </div>            
+    </div>
+    <!-------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/phone-backgroung.png.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><i><b>"Hello, my name is Arvind kumar. I am a Diplome in IT student of Goverment Polytechnic Ghaziabad. Learning new things about computers is my hobby. Which is why I chose Information technology  I am learning web development in my free time, and i believe i can become a good web developer."</b></i></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language :</span><br>Programming C<br>JavaScript<br>Python</li>
+                            <li><span>Web - Dev :</span><br>HTML<br>CSS<br>React.js<br>Node.js<br> Express.js<br>MangoDB<br>Bootstrap</li>
+                            <li><span>Tools :</span><br>Git/GitHub<br>Chat GPT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>GOVERNMENT POLYTECHNIC GHAZIABAD</span><br>DIPLOMA IN INFORMATION TECHNOLOGY [EXPECTED - 2026]</li>
+                            <li><span>J V INTER COLLEGE BAKEWAR ETAWAH</span><br> CLASS XII UP BOARD - 67.8% [2023]</li>
+                            <li><span> Swami vivekanand public school ekri lakhana ETAWAH</span><br> CLASS X UP BOARD - 83.6% [2021]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------contect----------->
+    <div id="contect">
+        <div class="container">
+            <div class="row">
+                <div class="contect-left">
+                    <h1 class="sub-title">Contect Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>arvindkumar2224jk@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7599847194</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/arvind.sharma2502?mibextid=ZbWKwL"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/arvindkuma6235?t=n2pJnoALNnoK_a7qRWiIPg&s=09"> <i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/arvind_sharma_2502?igsh=ZDExYjZkNGI0OA=="> <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/arvind-kumar-b774a2334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV 1.pdf" class="btn">Download CV</a>
+                </div>
+                <div class="contect-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Arvind. My <i class="fa-solid fa-heart"></i> Portfolio</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
